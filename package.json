@@ -1,0 +1,32 @@
+{
+  "name": "iglu.react.dev.env",
+  "version": "0.0.0",
+  "description": "Node.js Development environment for React.js apps at Iglu.net",
+  "main": "index.js",
+  "scripts": {
+    "prepublish": "echo \"Compile with babel!\" || true",
+    "test": "echo \"Not yet!\" || true",
+    "start": "nodemon ./src/index.js",
+    "lock": "npm shrinkwrap --dev",
+    "lint": "standard --fix && standard && echo 'Good Standad code :)' || echo 'Not good Standad dode :('"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miksansegundo/iglu.react.dev.env.git"
+  },
+  "author": "miguelsansegundo@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/miksansegundo/iglu.react.dev.env/issues"
+  },
+  "homepage": "https://github.com/miksansegundo/iglu.react.dev.env#readme",
+  "dependencies": {
+    "axios": "^0.15.2",
+    "ramda": "^0.22.1"
+  },
+  "devDependencies": {
+    "mocha": "^3.1.2",
+    "recompose": "^0.20.2",
+    "standard": "^8.4.0"
+  }
+}
