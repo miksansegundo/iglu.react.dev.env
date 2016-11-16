@@ -1,0 +1,23 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-css-modules"
+  ],
+  "rules": {
+    "color-hex-case": "lower",
+    "declaration-block-properties-order": "alphabetical",
+    "string-quotes": "single",
+    "font-family-name-quotes": "always-where-recommended",
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": [
+          "global"
+        ]
+      }
+    ],
+    "indentation": 2,
+    "declaration-block-no-redundant-longhand-properties": null,
+    "selector-type-no-unknown": null
+  }
+}
