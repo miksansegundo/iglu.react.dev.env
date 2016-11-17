@@ -1,9 +1,8 @@
-import * as React from "react"
+import * as React from 'react'
 const styles = require('./styles.css')
+import Greeting from './Greeting'
 
-export interface RootProps { compiler: string; framework: string }
-
-export class Root extends React.Component<RootProps, {}> {
+/* export class Root extends React.Component<RootProps, {}> {
   render() {
     return (
       <div className={styles.root}>
@@ -11,4 +10,12 @@ export class Root extends React.Component<RootProps, {}> {
       </div>
     )
   }
+} */
+
+export default function Root() {
+  return (
+    <div className={styles.root}>
+      <Greeting compiler="TypeScript" framework="React.js"></Greeting>
+    </div>
+  )
 }
